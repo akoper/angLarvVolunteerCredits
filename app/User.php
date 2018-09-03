@@ -7,6 +7,12 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+
+	/** 
+	 * open question - should the user be using the SoftDelete trait? 
+	 * Hard deleting a user would cause a lot of problems with data!
+	 */
+
     use Notifiable;
 
     /**
